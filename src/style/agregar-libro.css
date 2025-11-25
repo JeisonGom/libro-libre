@@ -1,0 +1,140 @@
+.admin-page {
+    padding: 40px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9fb;
+    min-height: 100vh;
+}
+
+.admin-page h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-agregar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.form-agregar input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 220px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-agregar input:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 4px rgba(41, 128, 185, 0.3);
+    outline: none;
+}
+
+.form-agregar button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-agregar button:hover {
+    background-color: #219150;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.lista-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 35px;
+    justify-items: center;
+}
+
+.tarjeta-libro-admin {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-libro-admin:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-libro-admin img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-libro-admin h4 {
+    font-size: 17px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.tarjeta-libro-admin p {
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .form-agregar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-agregar input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .lista-libros {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .lista-libros {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,118 @@
+.reservas-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.reservas-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+/* Grid de libros */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .reservas-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mensajes */
+.mensaje-carga,
+.sin-reservas {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6c757d;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.error-box {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-box p {
+  margin: 0 0 12px 0;
+}
+
+.btn-reintentar {
+  background-color: #721c24;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-reintentar:hover {
+  background-color: #5a1519;
+}
+
+/* Botón volver */
+.btn-volver {
+  display: block;
+  margin: 40px auto 0;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #6c63ff 0%, #5548d3 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  max-width: 200px;
+}
+
+.btn-volver:hover {
+  background: linear-gradient(135deg, #5548d3 0%, #4a3ba8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+}
+
+.btn-volver:active {
+  transform: translateY(0);
+}

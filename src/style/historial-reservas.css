@@ -1,0 +1,117 @@
+.historial-container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(31, 41, 55, 0.06);
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+}
+
+.historial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.historial-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn-back {
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.historial-info {
+    text-align: center;
+    color: #6b7280;
+}
+
+.historial-error {
+    text-align: center;
+    color: #dc2626;
+}
+
+.historial-table-wrapper {
+    overflow-x: auto;
+}
+
+.historial-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.historial-table thead th {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #374151;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+.historial-table tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #374151;
+}
+
+.historial-portada {
+    width: 56px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.historial-portada.placeholder {
+    width: 56px;
+    height: 78px;
+    background: #f3f4f6;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.badge-activa {
+  background: #10b981; /* verde */
+}
+
+.btn-cancelar-reserva {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cancelar-reserva:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 720px) {
+    .historial-container {
+    padding: 12px;
+    }
+
+    .historial-table {
+    min-width: 600px;
+    }
+}
